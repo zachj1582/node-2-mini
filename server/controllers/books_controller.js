@@ -13,7 +13,7 @@ module.exports = {
         }
         books.push(book)
         id++
-        req.status(200).send(books)
+        res.status(200).send(books)
     },
     update: (req,res) => {
         const {id} = req.params
